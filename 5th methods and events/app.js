@@ -8,10 +8,13 @@ let app = Vue.createApp({
     increase(){
       this.count = this.count + 1;
     },
-    deCrease(){
+  },
+  methods: {
+    decrease(){
       this.count = this.count - 1;
     },
   }
+
 });
 
 app.mount("#app");
