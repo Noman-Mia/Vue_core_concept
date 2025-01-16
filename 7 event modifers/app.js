@@ -1,12 +1,27 @@
-const app = Vue.createApp({
+var app = Vue.createApp({
   data() {
     return {
-      name: ''
+      name: ""
     };
   },
+
   methods: {
-    handleKeyUp(event) {
-      this.name = event.target.value;
+    handleKeyup(e) {
+      this.name = e.target.value;
+    },
+
+    handleFormSubmit() {
+      console.log("Form submitted!");
+    },
+
+    handleCardClick(e) {
+      console.log(e);
+      console.log("Card clicked!");
+    },
+
+    handleViewClick(e) {
+      console.log(e);
+      console.log("View clicked!");
     }
   }
 });

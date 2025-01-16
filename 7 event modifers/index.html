@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,15 +7,26 @@
   <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
+  <header>
+    <h2>Vue JS 3 Bangla Tutorial</h2>
+  </header>
+
   <div id="app">
-    <h1>Enter Your Name:</h1>
-    <input type="text" @keyup="handleKeyUp" />
-    <p>Welcome, {{ name }}</p>
+    <form @submit.prevent="handleFormSubmit">
+      <h3>Enter your name</h3>
+      <input type="text" @keyup="handleKeyup" />
+      <p>Welcome {{name}}!</p>
+      <button type="submit">OK</button>
+    </form>
+    <hr />
+    <br />
+
+    <div class="card" @click="handleCardClick">
+      <button @click.stop="handleViewClick">View</button>
+    </div>
   </div>
 
-  <script src="app.js">
-   
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
-
+ -->
